@@ -1,5 +1,8 @@
 # Terms of use: Repost Checker
 
+*Last updated: 2026-11-01. Host this page at a public address (a subreddit wiki page or GitHub Pages) and save that
+address in the app's details in the Reddit developer portal.*
+
 Repost Checker ("the app") is a free moderation tool for Reddit communities. By installing it you agree to these
 terms. These are the app's own terms; they are in addition to Reddit's User Agreement, Developer Terms and Devvit
 Rules.
