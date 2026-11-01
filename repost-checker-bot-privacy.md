@@ -1,5 +1,8 @@
 # Privacy policy: Repost Checker
 
+*Last updated: 2026-11-01. Host this page at a public address and save that address in the app's details in the
+Reddit developer portal.*
+
 **Who we are.** Repost Checker ("the app") is a Reddit moderation app by u/kei-kazuki. Contact: message that user on
 Reddit.
 
@@ -18,7 +21,7 @@ data, and the app has no server of its own.
 | If the "is this a repost?" command is on: a per-user daily request counter | To limit requests | 2 days |
 | A moderator's blacklist entry: the fingerprint, the post id, the reason the moderator typed and the time (not the moderator's name) | To remove reposts of an image the moderators blacklisted | Until the moderators remove it or the post is deleted by its author or Reddit |
 | Counters, and a short log of recent events and errors (which can name a user) | To show the status and activity report | Logs 30 days; daily counters 40 days; lifetime totals are only numbers |
-| API keys the moderators saved for AI services | To call the service | Until the moderators delete them from the same menu |
+| API keys the moderators typed into the AI detection settings | To call the service | Until the moderators clear the fields. They are installation settings, so every moderator of that community can read them |
 
 **Not stored:** pictures, titles, links and comment text. They are read from Reddit when needed (for example to
 write a table of earlier posts) and are not kept.
@@ -39,7 +42,7 @@ write a table of earlier posts) and are not kept.
 
 * The app downloads images and previews **from Reddit's own image servers** (`i.redd.it`, `preview.redd.it`,
   `external-preview.redd.it`). Nothing is sent to them except the request for the image.
-* **Only if the moderators turn on AI detection and save their own key:** for a checked post, SightEngine
+* **Only if the moderators turn on AI detection and enter their own key:** for a checked post, SightEngine
   (`api.sightengine.com`) receives the public image address and Google Gemini (`generativelanguage.googleapis.com`)
   receives the image, together with the moderators' own key. The moderators choose which one is used. They process it
   under their own terms and privacy policies. The app does not send any username, post text or other data to them
