@@ -15,7 +15,7 @@ data, and the app has no server of its own.
 | --- | --- | --- |
 | A fingerprint of each post's image (a 16-character code, not the image), the post id and the post time | To recognise reposts | Until the post is deleted by its author or taken down by Reddit, or the moderators' retention limit. A post a moderator removed is kept unless the moderators chose to forget removed posts |
 | The author's username as seen at submission | To recognise someone reposting their own post | 30 days by default (moderators may choose 1-90), then erased; the fingerprint stays |
-| If "edited copies" matching is on: short codes and positions of small patches of the picture (no pixels) | To recognise edited copies | Same as the fingerprint; oldest dropped above a cap |
+| If "edited copies" matching is on (the default): short codes and positions of small patches of the picture (no pixels, about 7 KB per post) | To recognise edited copies | Same as the fingerprint; oldest dropped above a cap |
 | If AI detection is on: the score of each checked post | To show the result and avoid paid re-checks | 30 days |
 | If repeat-reposter strikes are on: a user's lowercase username and the ids of their recent reposts | To count reposts | The strike window set by the moderators (30 days by default, 90 at most) |
 | If the "is this a repost?" command is on: a per-user daily request counter | To limit requests | 2 days |
