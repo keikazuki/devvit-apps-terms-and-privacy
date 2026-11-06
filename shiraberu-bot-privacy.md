@@ -1,8 +1,8 @@
-# Neoragi Privacy Policy
+# Shiraberu Privacy Policy
 
 Last updated: 2026-11-05
 
-**Summary:** Neoragi does not use analytics or advertising and does not sell or share data. It
+**Summary:** Shiraberu does not use analytics or advertising and does not sell or share data. It
 never stores the text of a comment. It keeps the minimum it needs to answer one comment, to edit or
 delete its reply later, and to show a community's statistics, and everything that is tied to a
 person or to a comment is removed after 30 days at the latest, or at once when the comment is
