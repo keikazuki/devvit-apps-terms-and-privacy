@@ -16,10 +16,10 @@ number of episodes or volumes and genres.
    request comment is deleted. It looks titles up through the public APIs of AniList
    (graphql.anilist.co), Kitsu (kitsu.io), VNDB (api.vndb.org) and MangaUpdates
    (api.mangaupdates.com).
-3. **Adult-rated titles.** The catalogues contain adult-rated works. By default the app answers a
-   request for one like any other (title, links, genres). Moderators can switch this off in the
-   settings ("Include adult-rated titles"); then such titles get no answer. The app is marked
-   NSFW because of this default. Moderators decide whether this fits their community and
+3. **Adult-rated titles.** The catalogues contain adult-rated works. By default the app skips them
+   and a request for one gets no answer. Moderators of communities that allow adult content can
+   switch on "Include adult-rated titles" in the settings; the app then answers such a request
+   like any other (title, links, genres). Moderators decide whether this fits their community and
    Reddit's rules.
 4. **Limits.** The app answers at most 30 requests per comment (moderators can lower this) and
    posts at most 200 replies per hour per community (moderators can change this).
