@@ -1,8 +1,8 @@
-# Neoragi Terms of Service
+# Shiraberu Terms of Service
 
 Last updated: 2026-11-05
 
-Neoragi ("the app") is a Reddit app for communities that talk about anime, manga, light novels
+Shiraberu ("the app") is a Reddit app for communities that talk about anime, manga, light novels
 and visual novels. When a user writes the name of a series between brackets in a comment, the app
 looks it up in public catalogues and replies with a short card: title, links, type, status,
 number of episodes or volumes and genres.
