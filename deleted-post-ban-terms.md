@@ -15,7 +15,7 @@ permanent ban, according to the settings chosen by the community's moderators.
    bans their community issues through the app.
 3. **What the app does.** After a ban the app sends the banned user the message you configured, adds a mod note, and
    remembers the post so that it never bans for the same post twice, even if a moderator lifts the ban. It does not
-   remove posts or comments, and it does not ban moderators or approved users unless you choose otherwise.
+   remove posts or comments. It never bans moderators, and approved users only if you switch that exemption off.
 4. **Accuracy.** The app relies on what Reddit reports about a post. A post can look deleted by its author when it is
    not (for example when an account was closed), and Reddit's reporting can change. Moderators should use Dry run
    first and review the modmail summaries. Wrongly banned users can be unbanned by moderators; the app will not ban
