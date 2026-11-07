@@ -29,8 +29,7 @@ while it checks a post. It does not keep them.
 
 The app exists to act on posts that their authors deleted. For that reason it keeps the post id, the author's
 username and the time of each post, and the record of a ban, after the author deleted the post. Moderators who do not
-want this should not install the app. The username of an author whose account was deleted is not available and is not
-stored.
+want this should not install the app.
 
 ## Third parties
 
