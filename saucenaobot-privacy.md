@@ -9,19 +9,21 @@ to look up one post at a time.
 
 ## What the app handles
 
-| Data                                                              | Why                                                                   | Where it goes                                                                                          | How long                                           |
-| ----------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
-| Post ID                                                           | To queue the post, avoid answering it twice, and retry failed lookups | Reddit-provided app storage                                                                            | See "Retention"                                    |
-| Post image URL                                                    | To look up the image                                                  | Sent (URL only) to saucenao.com; read from Reddit when needed, not stored by the app                   | Not stored                                         |
-| SauceNAO API key entered by moderators                            | To authenticate lookups                                               | Stored in the app's Reddit-provided settings for that subreddit; sent to saucenao.com with each lookup | Until a moderator removes it or uninstalls the app |
-| Flair template IDs and comment text options entered by moderators | App configuration                                                     | App settings                                                                                           | Until changed or uninstalled                       |
-| A daily-limit cooldown marker                                     | To stop calling SauceNAO after it reports its limit                   | Reddit-provided app storage                                                                            | Expires automatically                              |
+| Data                                                                                                                         | Why                                                                   | Where it goes                                                                                          | How long                                           |
+| ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | -------------------------------------------------- |
+| Post ID                                                                                                                      | To queue the post, avoid answering it twice, and retry failed lookups | Reddit-provided app storage                                                                            | See "Retention"                                    |
+| Post image URL                                                                                                               | To look up the image                                                  | Sent (URL only) to saucenao.com; read from Reddit when needed, not stored by the app                   | Not stored                                         |
+| SauceNAO API key entered by moderators                                                                                       | To authenticate lookups                                               | Stored in the app's Reddit-provided settings for that subreddit; sent to saucenao.com with each lookup | Until a moderator removes it or uninstalls the app |
+| Flair template IDs, comment text options, similarity limits and an optional list of usernames to skip, entered by moderators | App configuration                                                     | App settings                                                                                           | Until changed or uninstalled                       |
+| A daily-limit cooldown marker                                                                                                | To stop calling SauceNAO after it reports its limit                   | Reddit-provided app storage                                                                            | Expires automatically                              |
 
 ## What the app does not do
 
 - It does not store post titles, post bodies, comments, or usernames beyond what
   Reddit itself keeps (the reply mentions the post author's username, as the
-  original bot did, but the app does not save it).
+  original bot did, but the app does not save it). The one exception is the
+  optional "Skip posts by these users" setting: the usernames a moderator types
+  there are kept in the app's settings, like any other setting.
 - It does not collect browsing data, IP addresses, or device information.
 - It does not send any Reddit user information to SauceNAO. Only the image URL
   and the moderators' API key are sent.
